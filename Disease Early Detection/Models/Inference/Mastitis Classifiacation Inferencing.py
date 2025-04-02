@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-class KidneyDiseasesClassification:
+class MastitisDiseasesClassification:
     def __init__(self, model_path, class_names, input_size=(224, 224), device=None):
         """
         Initialize the Mastitis Diseases Classification class.
@@ -109,7 +109,7 @@ class KidneyDiseasesClassification:
 #model_path = r"Mastitis_Diseases_Classfication_Model.pth"
 
 # Initialize the detection class with a custom threshold
-#classifier = KidneyDiseasesClassification(model_path=model_path, class_names=class_names)
+#classifier = MastitisDiseasesClassification(model_path=model_path, class_names=class_names)
 
 # Perform inference
 #image_path = r"udder-7_jpg.rf.66090e8848d7b3b2e76d2c7dd06119c2.jpg"
