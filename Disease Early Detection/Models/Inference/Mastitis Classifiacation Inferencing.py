@@ -85,26 +85,32 @@ class KidneyDiseasesClassification:
 
         with torch.no_grad():
             outputs = self.model(img_tensor)
-            _, preds = torch.max(outputs, 1)
+            probabilities = torch.softmax(outputs, dim=1)
+            confidence, preds = torch.max(probabilities, 1)
 
-            # Display predicted label
-            ax = plt.subplot(2, 2, 1)
-            ax.axis('off')
-            ax.set_title(f'Predicted: {self.class_names[preds[0]]}')
+            predicted_label = self.class_names[preds[0]]
+            confidence_score = confidence[0].item() * 100
 
-            # Pass the predicted label to imshow_fixed_grid1
-            self.imshow_fixed_grid1(img_tensor.cpu().data[0], self.class_names[preds[0]])
+            result = {
+                "Predicted Label": predicted_label,
+                "Confidence": f"{confidence_score:.2f}%"
+            }
+
+            # Display the image with the predicted label
+            #self.imshow_fixed_grid1(img_tensor.cpu().data[0], f"{predicted_label} ({confidence_score:.2f}%)")
+
+            return result
 
 
 # Define class names
-class_names = ["Normal", "Infected"]
+#class_names = ["Normal", "Infected"]
 
 # Path to model weights
-model_path = r"Mastitis_Diseases_Classfication_Model.pth"
+#model_path = r"Mastitis_Diseases_Classfication_Model.pth"
 
 # Initialize the detection class with a custom threshold
-classifier = KidneyDiseasesClassification(model_path=model_path, class_names=class_names)
+#classifier = KidneyDiseasesClassification(model_path=model_path, class_names=class_names)
 
 # Perform inference
-image_path = r"udder-7_jpg.rf.66090e8848d7b3b2e76d2c7dd06119c2.jpg"
-classifier.infer(image_path)
+#image_path = r"udder-7_jpg.rf.66090e8848d7b3b2e76d2c7dd06119c2.jpg"
+#classifier.infer(image_path)
