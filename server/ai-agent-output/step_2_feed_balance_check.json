@@ -1,0 +1,98 @@
+{
+  "balanced": false,
+  "missing_nutrients": [
+    "الملح (كلوريد الصوديوم)",
+    "الدهون",
+    "السيلينيوم"
+  ],
+  "surplus_nutrients": [
+    "البروتين (في حالة عدم وجود توازن الطاقة)",
+    "الكالسيوم (اعتمادًا على نسبة الكالسيوم إلى الفسفور)"
+  ],
+  "comparison_notes": "بناءً على التوليفة الحالية، هناك بعض النواقص والفائضات التي يجب معالجتها لتحسين صحة وإنتاجية البقرة الحلوب. يجب مراجعة التوليفة الحالية مع الأخذ في الاعتبار الاحتياجات الدقيقة للسلالة ومرحلة الإنتاج.",
+  "improved_feed_recommendation": {
+    "roughage": {
+      "name": "Alfalfa Hay",
+      "amount_kg": 10.0,
+      "protein_percent": 18.0,
+      "fiber_percent": 30.0,
+      "energy_mcal": 2.2,
+      "notes": "البرسيم يوفر بروتينًا عالي الجودة وأليافًا ضرورية لصحة الجهاز الهضمي. يجب التأكد من جودة البرسيم وتخزينه بشكل صحيح لتجنب العفن.",
+      "sources": [
+        "Local farms",
+        "Feed suppliers"
+      ]
+    },
+    "concentrate": {
+      "name": "Corn and Soybean Meal Mix",
+      "amount_kg": 7.5,
+      "protein_percent": 35.0,
+      "fiber_percent": 5.0,
+      "energy_mcal": 3.0,
+      "notes": "يتم توفير الذرة كمصدر للطاقة وفول الصويا كمصدر للبروتين. يجب خلطهما جيدًا لضمان حصول البقرة على التغذية المتوازنة. يمكن تعديل الكمية بناءً على حالة البقرة وإنتاج الحليب.",
+      "sources": [
+        "Grain suppliers",
+        "Feed mills"
+      ]
+    },
+    "supplements": [
+      {
+        "name": "Mineral Mix (with Salt)",
+        "amount_kg": 0.2,
+        "protein_percent": null,
+        "fiber_percent": null,
+        "energy_mcal": null,
+        "notes": "يحتوي على معادن أساسية مثل الكالسيوم والفوسفور والماغنيسيوم والصوديوم (الملح) لدعم إنتاج الحليب وصحة العظام. يجب توفير هذا الخليط يوميًا.",
+        "sources": [
+          "Feed stores",
+          "Veterinary suppliers"
+        ]
+      },
+      {
+        "name": "Vitamin ADE Supplement",
+        "amount_kg": 0.05,
+        "protein_percent": null,
+        "fiber_percent": null,
+        "energy_mcal": null,
+        "notes": "الفيتامينات ضرورية لدعم الصحة العامة والمناعة والخصوبة. خاصة مهمة خلال فترة إنتاج الحليب.",
+        "sources": [
+          "Feed stores",
+          "Veterinary suppliers"
+        ]
+      },
+      {
+        "name": "Fat Supplement (e.g., Calcium Salts of Fatty Acids)",
+        "amount_kg": 0.2,
+        "protein_percent": null,
+        "fiber_percent": null,
+        "energy_mcal": 7.0,
+        "notes": "إضافة الدهون ضرورية لزيادة كثافة الطاقة في العلف، خاصة للبقرات عالية الإنتاج. تساعد في تحسين إنتاج الحليب ونسبة الدهون فيه.",
+        "sources": [
+          "Feed stores",
+          "Specialty feed suppliers"
+        ]
+      },
+      {
+        "name": "Selenium Supplement",
+        "amount_kg": 0.01,
+        "protein_percent": null,
+        "fiber_percent": null,
+        "energy_mcal": null,
+        "notes": "السيلينيوم ضروري لوظيفة المناعة ومضاد للأكسدة. نقصه يمكن أن يؤدي إلى مشاكل صحية.",
+        "sources": [
+          "Feed stores",
+          "Veterinary suppliers"
+        ]
+      }
+    ],
+    "water": {
+      "liters": 80.0,
+      "notes": "يجب توفير المياه النظيفة باستمرار. تزداد حاجة البقرة للماء خلال إنتاج الحليب. يجب التأكد من نظافة المشارب.",
+      "sources": [
+        "Well water",
+        "Municipal water"
+      ]
+    },
+    "notes": "هذه التوليفة المعدلة مصممة لتلبية احتياجات بقرة حلوب من سلالة جيرسي تنتج 28.5 لترًا من الحليب يوميًا. يجب مراقبة حالة البقرة وتعديل العلف حسب الحاجة. يفضل استشارة طبيب بيطري أو خبير تغذية للحصول على أفضل النتائج. يجب تقسيم العلف المركز على وجبتين أو ثلاث وجبات يوميًا لتجنب مشاكل الجهاز الهضمي. تم تعديل كمية العلف المركز وإضافة مكملات الدهون والسيلينيوم والملح لتحسين التوازن الغذائي."
+  }
+}
