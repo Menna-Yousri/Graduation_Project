@@ -1,76 +1,69 @@
 {
   "top_3_products": [
     {
-      "product_name": "علف الماشية الحلوب 18% حبيبات (Dairy Cattle Feed 18% Pellets)",
-      "protein_percent": 18.0,
-      "price_per_kg": 0.0,
-      "key_ingredients": [
-        "شعير (Barley)",
-        "ذرة صفراء (Yellow Corn)",
-        "وجبة فول الصويا (Soybean Meal)",
-        "نخالة القمح (Wheat Bran)"
-      ],
-      "matches_ideal_formula": false,
-      "match_reason": "Missing fat and selenium supplements, and mineral mix with salt. Protein percentage is lower than the ideal formula.",
-      "supplier_rating": 0.0,
-      "url": "https://almaraai-alhadeetha.com/ar/product/%D8%B9%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%A7%D8%B4%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D9%84%D9%88%D8%A8-18%D9%AA-%D8%AD%D8%A8%D9%8A%D8%A8%D8%A7%D8%AA/"
-    },
-    {
-      "product_name": "الشركة الوطنية لإنتاج الأعلاف - علف حلاب سوبر 19%",
-      "protein_percent": 19.0,
-      "price_per_kg": 0.0,
-      "key_ingredients": [
-        "ذرة",
-        "فول صويا",
-        "نخالة قمح",
-        "مركزات بروتين",
-        "فيتامينات",
-        "معادن"
-      ],
-      "matches_ideal_formula": false,
-      "match_reason": "Missing specific fat and selenium supplements. Mineral mix composition not detailed enough.",
-      "supplier_rating": 0.0,
-      "url": "http://www.naf-eg.com/index.php/ar/products/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D9%8A/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D8%A8%D8%A7%D9%84%D9%85%D8%A7%D8%B4%D9%8A%D8%A9/%D8%B9%D9%84%D9%81-%D8%AD%D9%84%D8%A7%D8%A8-%D8%B3%D9%88%D8%A8%D8%B1-detail"
-    },
-    {
-      "product_name": "علف بادي نامي سوبر لتسمين الأبقار والجاموس",
+      "product_name": "علف مواشي تسمين (16% بروتين)",
       "protein_percent": 16.0,
-      "price_per_kg": 0.0,
+      "price_per_kg": 8.045,
       "key_ingredients": [
-        "ذرة",
-        "كسب قطن",
-        "رجيع أرز",
+        "ذرة صفراء مجروشة",
+        "كسب فول صويا 46 %",
+        "كسب عباد شمس 36 %",
         "نخالة قمح",
-        "أمولاس",
-        "حجر جيري",
+        "مسحوق حجر جيري",
+        "أحادي فوسفات الكالسيوم",
         "ملح طعام",
-        "مضاد سموم",
-        "خميرة",
-        "فيتامينات",
-        "معادن"
+        "بيكربونات الصوديوم",
+        "مخلوط فيتامينات وأملاح ( بريمكس )"
       ],
       "matches_ideal_formula": false,
-      "match_reason": "Lower protein percentage than ideal, formulated for fattening rather than milk production, missing fat and selenium supplements.",
-      "supplier_rating": 0.0,
-      "url": "https://www.elmazraa.com/ar/%D8%B9%D9%84%D9%81-%D8%A8%D8%A7%D8%AF%D9%89-%D9%86%D8%A7%D9%85%D9%89-%D8%B3%D9%88%D8%A8%D8%B1-%D9%84%D8%AA%D8%B3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%A8%D9%82%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D9%88%D8%B3"
+      "match_reason": "قد لا تكون هذه التركيبة مصممة خصيصًا لأبقار الأنجوس أو تلبي التوازن المثالي للعناصر الغذائية لإنتاج اللحوم كما هو موضح في السياق.",
+      "supplier_rating": null,
+      "url": "https://uccma-feed.com/?page_id=51&lang=ar"
+    },
+    {
+      "product_name": "تبن برسيم حجازي بورسعيد سوبر",
+      "protein_percent": 0.0,
+      "price_per_kg": 0.0,
+      "key_ingredients": [
+        "برسيم حجازي"
+      ],
+      "matches_ideal_formula": false,
+      "match_reason": "المنتج عبارة عن تبن برسيم، وبالتالي لا يمثل عليقة كاملة، ويحتاج إلى مكونات أخرى لتلبية احتياجات الأبقار.",
+      "supplier_rating": null,
+      "url": "https://m.facebook.com/100063729779759/posts/pfbid02VvxY9UrkxT6zT3nNqJbVzFwS42XFwePtGvE9TFzJmjKgz96psj9xVzGXJjvk8bxnl/?locale=ar_AR"
+    },
+    {
+      "product_name": "مكعبات برسيم",
+      "protein_percent": 0.0,
+      "price_per_kg": 0.0,
+      "key_ingredients": [
+        "برسيم"
+      ],
+      "matches_ideal_formula": false,
+      "match_reason": "المنتج عبارة عن برسيم مكعبات، وبالتالي لا يمثل عليقة كاملة، ويحتاج إلى مكونات أخرى لتلبية احتياجات الأبقار.",
+      "supplier_rating": null,
+      "url": "https://www.elmazraa.com/ar/%D9%85%D9%83%D8%B9%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B1%D8%B3%D9%8A%D9%85"
     }
   ],
   "best_product": {
-    "product_name": "الشركة الوطنية لإنتاج الأعلاف - علف حلاب سوبر 19%",
-    "protein_percent": 19.0,
-    "price_per_kg": 0.0,
+    "product_name": "علف مواشي تسمين (16% بروتين)",
+    "protein_percent": 16.0,
+    "price_per_kg": 8.045,
     "key_ingredients": [
-      "ذرة",
-      "فول صويا",
+      "ذرة صفراء مجروشة",
+      "كسب فول صويا 46 %",
+      "كسب عباد شمس 36 %",
       "نخالة قمح",
-      "مركزات بروتين",
-      "فيتامينات",
-      "معادن"
+      "مسحوق حجر جيري",
+      "أحادي فوسفات الكالسيوم",
+      "ملح طعام",
+      "بيكربونات الصوديوم",
+      "مخلوط فيتامينات وأملاح ( بريمكس )"
     ],
     "matches_ideal_formula": false,
-    "match_reason": "Missing specific fat and selenium supplements. Mineral mix composition not detailed enough.",
-    "supplier_rating": 0.0,
-    "url": "http://www.naf-eg.com/index.php/ar/products/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D9%8A/%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D8%A8%D8%A7%D9%84%D9%85%D8%A7%D8%B4%D9%8A%D8%A9/%D8%B9%D9%84%D9%81-%D8%AD%D9%84%D8%A7%D8%A8-%D8%B3%D9%88%D8%A8%D8%B1-detail"
+    "match_reason": "قد لا تكون هذه التركيبة مصممة خصيصًا لأبقار الأنجوس أو تلبي التوازن المثالي للعناصر الغذائية لإنتاج اللحوم كما هو موضح في السياق.",
+    "supplier_rating": null,
+    "url": "https://uccma-feed.com/?page_id=51&lang=ar"
   },
-  "recommendation_reason": "While none of the products perfectly match the ideal formula, 'الشركة الوطنية لإنتاج الأعلاف - علف حلاب سوبر 19%' is the closest due to its higher protein content and inclusion of vitamins and minerals. However, it still requires supplementation with fat and selenium, and a more detailed mineral mix to fully meet the nutritional needs of a Jersey dairy cow."
+  "recommendation_reason": "على الرغم من أن \"علف مواشي تسمين (16% بروتين)\" ليس مثاليًا تمامًا، إلا أنه يمثل الخيار الأفضل المتاح من بين المنتجات التي تم فحصها. يوفر نسبة بروتين معقولة ومجموعة متنوعة من المكونات، مما يجعله خيارًا جيدًا لتكملة التوليفة الأساسية. ومع ذلك، يجب مراجعة التوليفة الكاملة مع خبير تغذية لضمان تلبية جميع الاحتياجات الغذائية للأبقار."
 }

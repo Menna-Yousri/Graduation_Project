@@ -1,15 +1,20 @@
 {
-  "product_name": "علف الماشية الحلوب 18% حبيبات (Dairy Cattle Feed 18% Pellets)",
-  "protein_percent": 18.0,
-  "price_per_kg": 0.0,
+  "product_name": "علف مواشي تسمين (16% بروتين)",
+  "protein_percent": 16.0,
+  "price_per_kg": 8.045,
   "key_ingredients": [
-    "شعير (Barley)",
-    "ذرة صفراء (Yellow Corn)",
-    "وجبة فول الصويا (Soybean Meal)",
-    "نخالة القمح (Wheat Bran)"
+    "ذرة صفراء مجروشة",
+    "كسب فول صويا 46 %",
+    "كسب عباد شمس 36 %",
+    "نخالة قمح",
+    "مسحوق حجر جيري",
+    "أحادي فوسفات الكالسيوم",
+    "ملح طعام",
+    "بيكربونات الصوديوم",
+    "مخلوط فيتامينات وأملاح ( بريمكس )"
   ],
   "matches_ideal_formula": false,
-  "match_reason": "Missing fat and selenium supplements, and mineral mix with salt. Protein percentage is lower than the ideal formula.",
-  "supplier_rating": 0.0,
-  "url": "https://almaraai-alhadeetha.com/ar/product/%D8%B9%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%A7%D8%B4%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D9%84%D9%88%D8%A8-18%D9%AA-%D8%AD%D8%A8%D9%8A%D8%A8%D8%A7%D8%AA/"
+  "match_reason": "This feed is designed for general livestock fattening and may not be specifically formulated for Angus cattle or meet the ideal balance of nutrients for meat production as outlined in the context.",
+  "supplier_rating": null,
+  "url": "https://uccma-feed.com/?page_id=51&lang=ar"
 }

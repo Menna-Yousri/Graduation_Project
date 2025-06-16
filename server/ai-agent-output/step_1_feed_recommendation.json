@@ -1,61 +1,57 @@
 {
   "roughage": {
-    "name": "Alfalfa Hay",
-    "amount_kg": 10.0,
-    "protein_percent": 18.0,
-    "fiber_percent": 30.0,
-    "energy_mcal": 2.2,
-    "notes": "البرسيم يوفر بروتينًا عالي الجودة وأليافًا ضرورية لصحة الجهاز الهضمي. يجب التأكد من جودة البرسيم وتخزينه بشكل صحيح لتجنب العفن.",
+    "name": "Grass Hay",
+    "amount_kg": 7.0,
+    "protein_percent": 8.0,
+    "fiber_percent": 35.0,
+    "energy_mcal": 1.8,
+    "notes": "يُفضل تقديم التبن ذو الجودة العالية لضمان توفير الألياف اللازمة لعملية الهضم السليمة. يجب التأكد من نظافة التبن وخلوه من العفن.",
     "sources": [
-      "Local farms",
-      "Feed suppliers"
+      "Local Hay Supplier"
     ]
   },
   "concentrate": {
-    "name": "Corn and Soybean Meal Mix",
-    "amount_kg": 8.0,
-    "protein_percent": 35.0,
-    "fiber_percent": 5.0,
-    "energy_mcal": 3.0,
-    "notes": "يتم توفير الذرة كمصدر للطاقة وفول الصويا كمصدر للبروتين. يجب خلطهما جيدًا لضمان حصول البقرة على التغذية المتوازنة. يمكن تعديل الكمية بناءً على حالة البقرة وإنتاج الحليب.",
+    "name": "Corn Grain",
+    "amount_kg": 2.5,
+    "protein_percent": 9.0,
+    "fiber_percent": 2.0,
+    "energy_mcal": 3.2,
+    "notes": "الذرة مصدر جيد للطاقة. يجب طحن الذرة بشكل خشن لتسهيل عملية الهضم. يمكن زيادة الكمية تدريجياً حسب حالة البقرة.",
     "sources": [
-      "Grain suppliers",
-      "Feed mills"
+      "Local Grain Supplier"
     ]
   },
   "supplements": [
     {
-      "name": "Mineral Mix",
-      "amount_kg": 0.15,
-      "protein_percent": null,
-      "fiber_percent": null,
-      "energy_mcal": null,
-      "notes": "يحتوي على معادن أساسية مثل الكالسيوم والفوسفور والماغنيسيوم لدعم إنتاج الحليب وصحة العظام. يجب توفير هذا الخليط يوميًا.",
-      "sources": [
-        "Feed stores",
-        "Veterinary suppliers"
-      ]
-    },
-    {
-      "name": "Vitamin ADE Supplement",
+      "name": "Mineral Block",
       "amount_kg": 0.05,
       "protein_percent": null,
       "fiber_percent": null,
       "energy_mcal": null,
-      "notes": "الفيتامينات ضرورية لدعم الصحة العامة والمناعة والخصوبة. خاصة مهمة خلال فترة إنتاج الحليب.",
+      "notes": "توفير قالب معدني حر لتلبية احتياجات المعادن الأساسية مثل الكالسيوم والفوسفور. يجب أن يكون القالب متاحًا للبقرة طوال الوقت.",
       "sources": [
-        "Feed stores",
-        "Veterinary suppliers"
+        "Commercial Mineral Supplement Supplier"
+      ]
+    },
+    {
+      "name": "Vitamin ADE Supplement",
+      "amount_kg": 0.01,
+      "protein_percent": null,
+      "fiber_percent": null,
+      "energy_mcal": null,
+      "notes": "إضافة فيتامينات ADE مهمة لتعزيز الصحة العامة والنمو. يمكن إضافتها إلى العلف أو الماء حسب تعليمات الشركة المصنعة.",
+      "sources": [
+        "Commercial Vitamin Supplement Supplier"
       ]
     }
   ],
   "water": {
-    "liters": 80.0,
-    "notes": "يجب توفير المياه النظيفة باستمرار. تزداد حاجة البقرة للماء خلال إنتاج الحليب. يجب التأكد من نظافة المشارب.",
+    "liters": 40.0,
+    "notes": "يجب توفير الماء النظيف بكمية كافية طوال اليوم. تزداد حاجة البقرة للماء في الطقس الحار.",
     "sources": [
-      "Well water",
-      "Municipal water"
+      "Well Water",
+      "Municipal Water Supply"
     ]
   },
-  "notes": "هذه التوليفة مصممة لتلبية احتياجات بقرة حلوب من سلالة جيرسي تنتج 28.5 لترًا من الحليب يوميًا. يجب مراقبة حالة البقرة وتعديل العلف حسب الحاجة. يفضل استشارة طبيب بيطري أو خبير تغذية للحصول على أفضل النتائج. يجب تقسيم العلف المركز على وجبتين أو ثلاث وجبات يوميًا لتجنب مشاكل الجهاز الهضمي."
+  "notes": "هذه التوليفة مصممة لتلبية احتياجات بقرة أنجوس عمرها سنتين بوزن 450 كجم مخصصة لإنتاج اللحم. يجب مراقبة حالة البقرة وتعديل الكميات حسب الحاجة. استشارة طبيب بيطري أو خبير تغذية للحصول على أفضل النتائج."
 }

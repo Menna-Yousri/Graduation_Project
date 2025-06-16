@@ -169,7 +169,7 @@ def get_cow_reports(cow_id: int, db: Session = Depends(get_db)):
     if not reports:
         raise HTTPException(status_code=404, detail="No reports found for this cow")
 
-    return [{"report_id": r.id, "date": r.date, "time": r.time} for r in reports]
+    return [{"report_id": r.per_cow_report_id, "date": r.date, "time": r.time} for r in reports]
 
 # 🟢 Get details of a specific report
 @app.get("/cows/{cow_id}/reports/{report_id}", response_model=CowReportDetailResponse)
