@@ -1,7 +1,7 @@
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 import os, random, glob, cv2, numpy as np
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from disease_detection.app import infer_abdominal_lumpy, infer_abdominal_mastitis, generate_disease_report
 from camera_simulation import simulate_camera_capture, encode_array_to_base64
 from database import engine, get_db, Base
@@ -12,6 +12,7 @@ from passlib.context import CryptContext
 from models import User, Cow, CowReport
 import asyncio
 from typing import List
+from sqlalchemy import cast, String
 import json
 from chatbot.app import get_smart_answer_vet, get_smart_answer_farmer
 from feed_feature import run_crew_process
@@ -38,60 +39,94 @@ app.add_middleware(
 latest_frame = {}
 
 
+
+# Define the minimum interval between reports for each disease based on veterinary recommendations
+DISEASE_REPORT_INTERVALS = {
+    "Mastitis": timedelta(hours=24),             # Re-reporting allowed after 24 hours
+    "Lumpy Skin Disease": timedelta(hours=72),   # Re-reporting allowed after 72 hours
+}
+
 async def camera_loop():
     while True:
         db: Session = None
         try:
+            # Simulate capturing a new frame from the camera
             rgb, depth, timestamp, image_path = simulate_camera_capture("./disease_detection/images")
-            cow_id = f"{random.randint(1, 10):02}"
+            cow_id = f"{random.randint(1, 10):02}"  # Generate a random cow ID between 01 and 10
 
+            # Update the latest frame for API access
             latest_frame["rgb_image"] = encode_array_to_base64(rgb)
             latest_frame["depth_map"] = encode_array_to_base64(depth, is_depth=True)
             latest_frame["timestamp"] = timestamp
             latest_frame["cow_id"] = cow_id
 
+            # Run disease inference models
             lumpy_result, lumpy_description = infer_abdominal_lumpy(image_path)
             mastitis_result, mastitis_description = infer_abdominal_mastitis(image_path)
 
+            # Check if any disease was confidently detected
             lumpy_detected = (
                 lumpy_result.get("Predicted Label") == "Lumpy Skin"
-                and float(lumpy_result.get("Confidence", "0").replace("%", "")) >= 50.0
+                and float(lumpy_result.get("Confidence", "0").replace("%", "")) >= 70.0
             )
             mastitis_detected = (
                 mastitis_result.get("Predicted Label") == "Infected"
-                and float(mastitis_result.get("Confidence", "0").replace("%", "")) >= 50.0
+                and float(mastitis_result.get("Confidence", "0").replace("%", "")) >= 70.0
             )
 
             db = next(get_db())
 
             if lumpy_detected or mastitis_detected:
+                # Identify the disease and retrieve its metadata
                 disease = "Lumpy Skin Disease" if lumpy_detected else "Mastitis"
                 description = lumpy_description if lumpy_detected else mastitis_description
                 result = lumpy_result if lumpy_detected else mastitis_result
-
-                report = generate_disease_report(description, result, cow_id, timestamp, disease)
                 dt = datetime.fromisoformat(timestamp)
 
-                # Get the next report ID for this cow
-                existing_reports = db.query(CowReport).filter(CowReport.cow_id == int(cow_id)).count()
-                next_per_cow_report_id = existing_reports + 1
+                # Fetch the most recent report for this cow and this specific disease
+                last_report = db.query(CowReport).filter(
+                    CowReport.cow_id == int(cow_id),
+                    cast(CowReport.report_json['disease_name'], String) == disease
+                ).order_by(CowReport.date.desc(), CowReport.time.desc()).first()
 
-                cow_report = CowReport(cow_id=int(cow_id) , per_cow_report_id=next_per_cow_report_id ,
-                    report_json=report , date=dt.date() , time=dt.time())
+                report_already_exists = False
+                if last_report:
+                    last_report_dt = datetime.combine(last_report.date, last_report.time)
+                    threshold = DISEASE_REPORT_INTERVALS.get(disease, timedelta(hours=24))
+                    if (dt - last_report_dt) < threshold:
+                        report_already_exists = True
 
-                db.add(cow_report)
+                if not report_already_exists:
+                    # Generate a new disease report and store it in the database
+                    report = generate_disease_report(description, result, cow_id, timestamp, disease)
 
+                    existing_reports = db.query(CowReport).filter(CowReport.cow_id == int(cow_id)).count()
+                    next_per_cow_report_id = existing_reports + 1
 
-                existing = db.query(Cow).filter(Cow.id == int(cow_id)).first()
-                if existing:
-                    existing.date = dt.date()
-                    existing.time = dt.time()
-                    existing.is_sick = True
+                    cow_report = CowReport(
+                        cow_id=int(cow_id),
+                        per_cow_report_id=next_per_cow_report_id,
+                        report_json=report,
+                        date=dt.date(),
+                        time=dt.time()
+                    )
+                    db.add(cow_report)
+
+                    # Update or create the cow's status in the main cow table
+                    existing = db.query(Cow).filter(Cow.id == int(cow_id)).first()
+                    if existing:
+                        existing.date = dt.date()
+                        existing.time = dt.time()
+                        existing.is_sick = True
+                    else:
+                        cow = Cow(id=int(cow_id), date=dt.date(), time=dt.time(), is_sick=True)
+                        db.add(cow)
                 else:
-                    cow = Cow(id=int(cow_id), date=dt.date(), time=dt.time(), is_sick=True)
-                    db.add(cow)
+                    # Skip report generation if a recent report already exists for the same disease
+                    print(f"[SKIPPED] 🐄 Cow {cow_id} already diagnosed with '{disease}' recently. Skipping duplicate report.")
 
             else:
+                # If the cow is no longer sick, update its status accordingly
                 existing = db.query(Cow).filter(Cow.id == int(cow_id)).first()
                 if existing and existing.is_sick:
                     existing.date = None
@@ -113,7 +148,9 @@ async def camera_loop():
             if db:
                 db.close()
 
+        # Wait before capturing the next frame
         await asyncio.sleep(100)
+
 
 # 🟢 Start camera loop on startup
 @app.on_event("startup")

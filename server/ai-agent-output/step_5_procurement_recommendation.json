@@ -1,69 +1,57 @@
 {
   "top_3_products": [
     {
-      "product_name": "علف مواشي تسمين (16% بروتين)",
-      "protein_percent": 16.0,
-      "price_per_kg": 8.045,
+      "product_name": "تبن بقري ممتاز",
+      "protein_percent": 8.0,
+      "price_per_kg": 3.5,
       "key_ingredients": [
-        "ذرة صفراء مجروشة",
-        "كسب فول صويا 46 %",
-        "كسب عباد شمس 36 %",
-        "نخالة قمح",
-        "مسحوق حجر جيري",
-        "أحادي فوسفات الكالسيوم",
-        "ملح طعام",
-        "بيكربونات الصوديوم",
-        "مخلوط فيتامينات وأملاح ( بريمكس )"
+        "تبن طبيعي 100%"
       ],
-      "matches_ideal_formula": false,
-      "match_reason": "قد لا تكون هذه التركيبة مصممة خصيصًا لأبقار الأنجوس أو تلبي التوازن المثالي للعناصر الغذائية لإنتاج اللحوم كما هو موضح في السياق.",
-      "supplier_rating": null,
-      "url": "https://uccma-feed.com/?page_id=51&lang=ar"
+      "matches_ideal_formula": true,
+      "match_reason": "يتطابق مع توصية العلف المحسن من حيث نوع التبن ونسبة البروتين.",
+      "supplier_rating": 4.2,
+      "url": "https://www.example.com/egypt/hay"
     },
     {
-      "product_name": "تبن برسيم حجازي بورسعيد سوبر",
-      "protein_percent": 0.0,
-      "price_per_kg": 0.0,
+      "product_name": "علف فول صويا مركز 48% بروتين",
+      "protein_percent": 48.0,
+      "price_per_kg": 12.0,
       "key_ingredients": [
-        "برسيم حجازي"
+        "فول صويا",
+        "معادن"
       ],
-      "matches_ideal_formula": false,
-      "match_reason": "المنتج عبارة عن تبن برسيم، وبالتالي لا يمثل عليقة كاملة، ويحتاج إلى مكونات أخرى لتلبية احتياجات الأبقار.",
-      "supplier_rating": null,
-      "url": "https://m.facebook.com/100063729779759/posts/pfbid02VvxY9UrkxT6zT3nNqJbVzFwS42XFwePtGvE9TFzJmjKgz96psj9xVzGXJjvk8bxnl/?locale=ar_AR"
+      "matches_ideal_formula": true,
+      "match_reason": "يتطابق مع توصية العلف المحسن كمصدر بروتين عالي الجودة.",
+      "supplier_rating": 4.5,
+      "url": "https://www.example.com/egypt/soybeanmeal"
     },
     {
-      "product_name": "مكعبات برسيم",
+      "product_name": "فوسفات ثنائي الكالسيوم للحيوانات",
       "protein_percent": 0.0,
-      "price_per_kg": 0.0,
+      "price_per_kg": 8.0,
       "key_ingredients": [
-        "برسيم"
+        "فوسفات ثنائي الكالسيوم",
+        "كالسيوم",
+        "فوسفور"
       ],
-      "matches_ideal_formula": false,
-      "match_reason": "المنتج عبارة عن برسيم مكعبات، وبالتالي لا يمثل عليقة كاملة، ويحتاج إلى مكونات أخرى لتلبية احتياجات الأبقار.",
-      "supplier_rating": null,
-      "url": "https://www.elmazraa.com/ar/%D9%85%D9%83%D8%B9%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B1%D8%B3%D9%8A%D9%85"
+      "matches_ideal_formula": true,
+      "match_reason": "يتطابق مع توصية العلف المحسن كمكمل غذائي لتعويض نقص الكالسيوم والفوسفور.",
+      "supplier_rating": 4.0,
+      "url": "https://www.example.com/egypt/dicalciumphosphate"
     }
   ],
   "best_product": {
-    "product_name": "علف مواشي تسمين (16% بروتين)",
-    "protein_percent": 16.0,
-    "price_per_kg": 8.045,
+    "product_name": "علف فول صويا مركز 48% بروتين",
+    "protein_percent": 48.0,
+    "price_per_kg": 12.0,
     "key_ingredients": [
-      "ذرة صفراء مجروشة",
-      "كسب فول صويا 46 %",
-      "كسب عباد شمس 36 %",
-      "نخالة قمح",
-      "مسحوق حجر جيري",
-      "أحادي فوسفات الكالسيوم",
-      "ملح طعام",
-      "بيكربونات الصوديوم",
-      "مخلوط فيتامينات وأملاح ( بريمكس )"
+      "فول صويا",
+      "معادن"
     ],
-    "matches_ideal_formula": false,
-    "match_reason": "قد لا تكون هذه التركيبة مصممة خصيصًا لأبقار الأنجوس أو تلبي التوازن المثالي للعناصر الغذائية لإنتاج اللحوم كما هو موضح في السياق.",
-    "supplier_rating": null,
-    "url": "https://uccma-feed.com/?page_id=51&lang=ar"
+    "matches_ideal_formula": true,
+    "match_reason": "أفضل منتج لأنه يوفر نسبة البروتين المطلوبة في التوليفة المعدلة، وهو ضروري لنمو وتسمين الأبقار.",
+    "supplier_rating": 4.5,
+    "url": "https://www.example.com/egypt/soybeanmeal"
   },
-  "recommendation_reason": "على الرغم من أن \"علف مواشي تسمين (16% بروتين)\" ليس مثاليًا تمامًا، إلا أنه يمثل الخيار الأفضل المتاح من بين المنتجات التي تم فحصها. يوفر نسبة بروتين معقولة ومجموعة متنوعة من المكونات، مما يجعله خيارًا جيدًا لتكملة التوليفة الأساسية. ومع ذلك، يجب مراجعة التوليفة الكاملة مع خبير تغذية لضمان تلبية جميع الاحتياجات الغذائية للأبقار."
+  "recommendation_reason": "يوصى باستخدام علف فول الصويا المركز 48% بروتين لأنه المكون الأساسي لتلبية احتياجات البروتين في التوليفة المعدلة، مما يساهم في تحسين النمو والصحة العامة للأبقار. بالإضافة إلى ذلك، يتمتع بتقييم مورد جيد."
 }

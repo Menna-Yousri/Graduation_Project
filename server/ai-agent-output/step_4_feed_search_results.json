@@ -1,20 +1,13 @@
 {
-  "product_name": "علف مواشي تسمين (16% بروتين)",
-  "protein_percent": 16.0,
-  "price_per_kg": 8.045,
+  "product_name": "product_name",
+  "protein_percent": 23.4,
+  "price_per_kg": 1.23,
   "key_ingredients": [
-    "ذرة صفراء مجروشة",
-    "كسب فول صويا 46 %",
-    "كسب عباد شمس 36 %",
-    "نخالة قمح",
-    "مسحوق حجر جيري",
-    "أحادي فوسفات الكالسيوم",
-    "ملح طعام",
-    "بيكربونات الصوديوم",
-    "مخلوط فيتامينات وأملاح ( بريمكس )"
+    "key_ingredient1",
+    "key_ingredient2"
   ],
-  "matches_ideal_formula": false,
-  "match_reason": "This feed is designed for general livestock fattening and may not be specifically formulated for Angus cattle or meet the ideal balance of nutrients for meat production as outlined in the context.",
-  "supplier_rating": null,
-  "url": "https://uccma-feed.com/?page_id=51&lang=ar"
+  "matches_ideal_formula": true,
+  "match_reason": "match_reason",
+  "supplier_rating": 4.56,
+  "url": "url"
 }
