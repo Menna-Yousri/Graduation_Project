@@ -83,11 +83,13 @@ async def camera_loop():
                 result = lumpy_result if lumpy_detected else mastitis_result
                 dt = datetime.fromisoformat(timestamp)
 
-                # Fetch the most recent report for this cow and this specific disease
-                last_report = db.query(CowReport).filter(
-                    CowReport.cow_id == int(cow_id),
-                    cast(CowReport.report_json['disease_name'], String) == disease
-                ).order_by(CowReport.date.desc(), CowReport.time.desc()).first()
+                # Fetch recent reports for this cow
+                recent_reports = db.query(CowReport)\
+                    .filter(CowReport.cow_id == int(cow_id))\
+                    .order_by(CowReport.date.desc (), CowReport.time.desc())\
+                    .all()
+                # Find most recent report for the same disease in Python
+                last_report = next((r for r in recent_reports if r.report_json.get("disease_name") == disease),None)
 
                 report_already_exists = False
                 if last_report:
