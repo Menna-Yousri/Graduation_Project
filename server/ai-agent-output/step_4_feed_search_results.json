@@ -1,13 +1,12 @@
 {
-  "product_name": "product_name",
-  "protein_percent": 23.4,
-  "price_per_kg": 1.23,
+  "product_name": "علف بادي تسمين 23 % - 1طنا",
+  "protein_percent": 23.0,
+  "price_per_kg": 20.75,
   "key_ingredients": [
-    "key_ingredient1",
-    "key_ingredient2"
+    "خامات نباتية 100%"
   ],
-  "matches_ideal_formula": true,
-  "match_reason": "match_reason",
-  "supplier_rating": 4.56,
-  "url": "url"
+  "matches_ideal_formula": false,
+  "match_reason": "Protein percentage is higher than the ideal concentrate (20-22%), ingredients not fully specified.",
+  "supplier_rating": null,
+  "url": "https://agrimisr.com/index.php?dispatch=products.view&product_id=7531"
 }

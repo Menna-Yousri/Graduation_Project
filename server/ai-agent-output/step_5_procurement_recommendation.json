@@ -1,57 +1,57 @@
 {
   "top_3_products": [
     {
-      "product_name": "تبن بقري ممتاز",
-      "protein_percent": 8.0,
-      "price_per_kg": 3.5,
+      "product_name": "علف بادي تسمين 23 % - 1طنا",
+      "protein_percent": 23.0,
+      "price_per_kg": 20.75,
       "key_ingredients": [
-        "تبن طبيعي 100%"
+        "خامات نباتية 100%"
       ],
-      "matches_ideal_formula": true,
-      "match_reason": "يتطابق مع توصية العلف المحسن من حيث نوع التبن ونسبة البروتين.",
-      "supplier_rating": 4.2,
-      "url": "https://www.example.com/egypt/hay"
+      "matches_ideal_formula": false,
+      "match_reason": "نسبة البروتين أعلى من النسبة المثالية للعلف المركز (20-22%)، المكونات غير محددة بالكامل.",
+      "supplier_rating": null,
+      "url": "https://agrimisr.com/index.php?dispatch=products.view&product_id=7531"
     },
     {
-      "product_name": "علف فول صويا مركز 48% بروتين",
-      "protein_percent": 48.0,
-      "price_per_kg": 12.0,
-      "key_ingredients": [
-        "فول صويا",
-        "معادن"
-      ],
-      "matches_ideal_formula": true,
-      "match_reason": "يتطابق مع توصية العلف المحسن كمصدر بروتين عالي الجودة.",
-      "supplier_rating": 4.5,
-      "url": "https://www.example.com/egypt/soybeanmeal"
-    },
-    {
-      "product_name": "فوسفات ثنائي الكالسيوم للحيوانات",
-      "protein_percent": 0.0,
+      "product_name": "دريس برسيم حجازي ممتاز",
+      "protein_percent": 18.0,
       "price_per_kg": 8.0,
       "key_ingredients": [
-        "فوسفات ثنائي الكالسيوم",
-        "كالسيوم",
-        "فوسفور"
+        "برسيم حجازي"
       ],
       "matches_ideal_formula": true,
-      "match_reason": "يتطابق مع توصية العلف المحسن كمكمل غذائي لتعويض نقص الكالسيوم والفوسفور.",
-      "supplier_rating": 4.0,
-      "url": "https://www.example.com/egypt/dicalciumphosphate"
+      "match_reason": "يتطابق مع نسبة البروتين الموصى بها في البرسيم المجفف.",
+      "supplier_rating": null,
+      "url": "https://m.facebook.com/AlfalfaEgypt/posts/2449447901851598/"
+    },
+    {
+      "product_name": "مجموعة فيتامينات و معادن",
+      "protein_percent": 0.0,
+      "price_per_kg": 50.0,
+      "key_ingredients": [
+        "فيتامين أ",
+        "فيتامين د3",
+        "فيتامين ه",
+        "كالسيوم",
+        "فسفور"
+      ],
+      "matches_ideal_formula": true,
+      "match_reason": "يوفر الفيتامينات والمعادن الأساسية الموصى بها.",
+      "supplier_rating": null,
+      "url": "https://vetoegy.com/ar/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86%D8%A7%D8%AA-%D9%88-%D9%85%D8%B9%D8%A7%D8%AF%D9%86-%D9%84%D9%84%D8%A3%D8%A8%D9%82%D8%A7%D8%B1-1-%D9%83%D8%AC"
     }
   ],
   "best_product": {
-    "product_name": "علف فول صويا مركز 48% بروتين",
-    "protein_percent": 48.0,
-    "price_per_kg": 12.0,
+    "product_name": "دريس برسيم حجازي ممتاز",
+    "protein_percent": 18.0,
+    "price_per_kg": 8.0,
     "key_ingredients": [
-      "فول صويا",
-      "معادن"
+      "برسيم حجازي"
     ],
     "matches_ideal_formula": true,
-    "match_reason": "أفضل منتج لأنه يوفر نسبة البروتين المطلوبة في التوليفة المعدلة، وهو ضروري لنمو وتسمين الأبقار.",
-    "supplier_rating": 4.5,
-    "url": "https://www.example.com/egypt/soybeanmeal"
+    "match_reason": "يتطابق مع نسبة البروتين الموصى بها في البرسيم المجفف وسعره مناسب.",
+    "supplier_rating": null,
+    "url": "https://m.facebook.com/AlfalfaEgypt/posts/2449447901851598/"
   },
-  "recommendation_reason": "يوصى باستخدام علف فول الصويا المركز 48% بروتين لأنه المكون الأساسي لتلبية احتياجات البروتين في التوليفة المعدلة، مما يساهم في تحسين النمو والصحة العامة للأبقار. بالإضافة إلى ذلك، يتمتع بتقييم مورد جيد."
+  "recommendation_reason": "يعتبر دريس البرسيم الحجازي ممتاز هو الخيار الأفضل لأنه يوفر البروتين المطلوب بسعر مناسب ويتطابق مع المواصفات الموصى بها للبرسيم المجفف في التوليفة المثالية. باقي المنتجات إما أن تكون نسبة البروتين فيها غير مناسبة أو أنها مكملات ضرورية ولكن البرسيم يمثل الجزء الأكبر من التغذية."
 }
